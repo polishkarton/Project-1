@@ -1,3 +1,5 @@
+@use 'reset';
+
 $main-color-dark: rgb(1, 11, 21);
 $main-color-light: rgb(241, 248, 255);
 $main-color: black;
@@ -10,8 +12,11 @@ $theme: 1;
         $main-color: $main-color-light;
     }
 
+html {
+    font-size: 10px;
+}
+
 body {
-    margin: 0;
     width: 100vw;
     height: 100vh;
     background: $main-color;
@@ -25,15 +30,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 5vw;
-    color: $main-color-dark;
-    text-shadow: 
-        0.2vw 0.2vw 0vw $main-color-light,
-        0.2vw -0.2vw 0vw $main-color-light,
-        -0.2vw 0.2vw 0vw $main-color-light,
-        -0.2vw -0.2vw 0vw $main-color-light;
+    
+    h1 {
+        font-size: 3.8rem;
+        font-weight: bold;
+        color: $main-color-dark;
+        text-shadow: 
+            0.1rem 0.1rem 0vw $main-color-light,
+            0.1rem -0.1rem 0vw $main-color-light,
+            -0.1rem 0.1rem 0vw $main-color-light,
+            -0.1rem -0.1rem 0vw $main-color-light;
+    }
 }
