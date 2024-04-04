@@ -1,22 +1,39 @@
-$background-color-dark: rgb(1, 11, 21);
-$background-color-light: rgb(241, 248, 255);
+$main-color-dark: rgb(1, 11, 21);
+$main-color-light: rgb(241, 248, 255);
+$main-color: black;
 $theme: 1;
+
+@if ($theme == 0)
+    {
+        $main-color: $main-color-dark;
+    } @else {
+        $main-color: $main-color-light;
+    }
 
 body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-
-    @if ($theme == 0)
-    {
-        background-color: $background-color-light;
-    } @else {
-        background-color: $background-color-dark;
-    }
+    background: $main-color;
+    font-family: "Roboto", sans-serif;;
 }
 
 header {
     width: 100vw;
     height: 100vh;
     background: url('../assets/img/bg_header.webp') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5vw;
+    color: $main-color-dark;
+    text-shadow: 
+        0.2vw 0.2vw 0vw $main-color-light,
+        0.2vw -0.2vw 0vw $main-color-light,
+        -0.2vw 0.2vw 0vw $main-color-light,
+        -0.2vw -0.2vw 0vw $main-color-light;
 }

@@ -2,13 +2,24 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(1, 11, 21);
+  background: rgb(241, 248, 255);
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   width: 100vw;
   height: 100vh;
   background: url("../assets/img/bg_header.webp") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 5vw;
+  color: rgb(1, 11, 21);
+  text-shadow: 0.2vw 0.2vw 0vw rgb(241, 248, 255), 0.2vw -0.2vw 0vw rgb(241, 248, 255), -0.2vw 0.2vw 0vw rgb(241, 248, 255), -0.2vw -0.2vw 0vw rgb(241, 248, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
