@@ -1,6 +1,14 @@
 body {
   margin: 0;
-  background-color: rgb(16, 2, 26);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(1, 11, 21);
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/img/bg_header.webp") center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */

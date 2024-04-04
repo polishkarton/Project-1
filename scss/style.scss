@@ -1,6 +1,22 @@
-$background-color: rgb(16, 2, 26);
+$background-color-dark: rgb(1, 11, 21);
+$background-color-light: rgb(241, 248, 255);
+$theme: 1;
 
 body {
     margin: 0;
-    background-color: $background-color;
+    width: 100vw;
+    height: 100vh;
+
+    @if ($theme == 0)
+    {
+        background-color: $background-color-light;
+    } @else {
+        background-color: $background-color-dark;
+    }
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/img/bg_header.webp') center/cover;
 }
