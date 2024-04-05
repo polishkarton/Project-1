@@ -6,11 +6,12 @@ $main-color: black;
 $theme: 1;
 
 @if ($theme == 0)
-    {
-        $main-color: $main-color-dark;
-    } @else {
-        $main-color: $main-color-light;
-    }
+{
+    $main-color: $main-color-dark;
+} @else {
+    $main-color: $main-color-light;
+
+}
 
 html {
     font-size: 10px;
@@ -18,7 +19,7 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background: $main-color;
     font-family: "Roboto", sans-serif;;
 }
@@ -26,19 +27,30 @@ body {
 header {
     width: 100vw;
     height: 100vh;
-    background: url('../assets/img/bg_header.webp') center/cover;
+    background: url('../assets/img/bg_header.webp') center/cover fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     
     h1 {
-        font-size: 3.8rem;
-        font-weight: bold;
+        font-size: 45px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 70px;
         color: $main-color-dark;
         text-shadow: 
-            0.1rem 0.1rem 0vw $main-color-light,
-            0.1rem -0.1rem 0vw $main-color-light,
-            -0.1rem 0.1rem 0vw $main-color-light,
-            -0.1rem -0.1rem 0vw $main-color-light;
+            0.15rem 0.15rem 0vw $main-color-light,
+            0.15rem -0.15rem 0vw $main-color-light,
+            -0.15rem 0.15rem 0vw $main-color-light,
+            -0.15rem -0.15rem 0vw $main-color-light;
+        user-select: none;
+
+        @media screen and (min-width: 800px) {
+            font-size: 64px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 70px;
+        }
     }
 }

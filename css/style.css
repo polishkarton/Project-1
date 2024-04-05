@@ -53,7 +53,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background: rgb(241, 248, 255);
   font-family: "Roboto", sans-serif;
 }
@@ -61,16 +61,29 @@ body {
 header {
   width: 100vw;
   height: 100vh;
-  background: url("../assets/img/bg_header.webp") center/cover;
+  background: url("../assets/img/bg_header.webp") center/cover fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header h1 {
-  font-size: 3.8rem;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 70px;
   color: rgb(1, 11, 21);
-  text-shadow: 0.1rem 0.1rem 0vw rgb(241, 248, 255), 0.1rem -0.1rem 0vw rgb(241, 248, 255), -0.1rem 0.1rem 0vw rgb(241, 248, 255), -0.1rem -0.1rem 0vw rgb(241, 248, 255);
+  text-shadow: 0.15rem 0.15rem 0vw rgb(241, 248, 255), 0.15rem -0.15rem 0vw rgb(241, 248, 255), -0.15rem 0.15rem 0vw rgb(241, 248, 255), -0.15rem -0.15rem 0vw rgb(241, 248, 255);
+  user-select: none;
+}
+@media screen and (min-width: 800px) {
+  header h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header h1 {
+    font-size: 70px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
