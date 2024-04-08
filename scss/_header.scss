@@ -1,0 +1,33 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/img/bg_header.webp') center/cover fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        font-size: 45px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 70px;
+
+        color: #010D00;
+        text-shadow: 
+            0.15rem 0.15rem 0vw rgb(237, 248, 254),
+            0.15rem -0.15rem 0vw rgb(237, 248, 254),
+            -0.15rem 0.15rem 0vw rgb(237, 248, 254),
+            -0.15rem -0.15rem 0vw rgb(237, 248, 254);
+
+        user-select: none;
+
+        @media screen and (min-width: 800px) {
+        font-size: 64px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 80px;
+        }
+    }
+}
