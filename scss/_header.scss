@@ -1,40 +1,85 @@
 @use 'variables' as colors;
+@use 'mixins' as m;
 
 header {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: url('../assets/img/bg_header.webp') center/cover fixed;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    h1 {
-        font-size: 40px;
-        font-weight: 400;
-        text-align: center;
-        line-height: 70px;
-    
-        color: rgb(255, 255, 255);
-    
-        
-        z-index: 1;
-    
-        @media screen and (min-width: 1010px) {
-            font-size: 70px;
+    .header-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 70px;
+            color: rgb(255, 255, 255);
+            
+            user-select: none;
+            z-index: 1;
+            
+            @include m.md {
+                font-size: 70px;
+            }
+
+            @include m.lg {
+                font-size: 90px;
+            }
         }
     
-        @media screen and (min-width: 1264px) {
-            font-size: 90px;
+        &::after {
+            content: '';
+            position: absolute;
+    
+            width: 100%;
+            height: 100%;
+            background-color: colors.$color-bg-header;
         }
-    }
 
-    &::after {
-        content: '';
-        position: absolute;
+        a {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 70px;
+            font-style: italic;
+            color: colors.$color1;
 
-        width: 100%;
-        height: 100%;
-        background-color: colors.$color-bg-header;
+            width: fit-content;
+            height: fit-content;
+            background-color: colors.$color-bg-link;
+            margin: 20px;
+            padding: 1px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: 5px solid colors.$color1;
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            z-index: 1;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: colors.$color-bg-href;
+                transform: skewX(-10deg);
+            }
+            
+            @include m.md {
+                font-size: 45px;
+                padding: 3px;
+            }
+
+            @include m.lg {
+                font-size: 55px;
+                padding: 5px;
+            }
+        }
     }
 }
