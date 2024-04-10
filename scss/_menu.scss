@@ -1,0 +1,54 @@
+@use 'variables' as colors;
+@use 'mixins' as m;
+
+#nav-box {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px;
+    background-color: colors.$color-bg-link;
+    border: 4px solid colors.$color1;
+    opacity: 0;
+
+    font-size: 25px;
+    overflow: hidden;
+    color: colors.$color1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 73px;
+    right: 0;
+
+    transition: z-index 0.5s;
+    z-index: -2;
+
+    @media screen and (min-width: 500px) {
+        width: 300px;
+    }
+
+    .link {
+        width: 250px;
+        height: 50px;
+        padding: 5px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        border-top: 2px solid colors.$color1;
+        
+        transition: 0.5s;
+
+        &:hover {
+            background-color: colors.$color-bg-href;
+        }
+    }
+}
+
+#nav-box.active {
+    z-index: 2;
+    opacity: 1;
+}

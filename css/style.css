@@ -57,7 +57,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background: #dbe8ef;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
@@ -71,11 +71,11 @@ a {
 nav {
   width: 100%;
   height: 75px;
-  background: #558C03;
+  backdrop-filter: blur(20px);
   border-bottom: 5px solid #010D00;
   font-size: 25px;
   font-weight: bold;
-  color: #010D00;
+  color: white;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -96,6 +96,7 @@ nav {
 nav .logo {
   padding-left: 30px;
   flex-basis: 50%;
+  letter-spacing: 10px;
 }
 nav .menu {
   padding-right: 30px;
@@ -105,6 +106,8 @@ nav .menu {
 nav .menu span {
   font-size: 40px;
   font-weight: 400;
+  transition: weight 1s;
+  cursor: pointer;
 }
 @media screen and (min-width: 950px) {
   nav .menu span {
@@ -115,6 +118,54 @@ nav .menu span {
   nav .menu span {
     font-size: 55px;
   }
+}
+nav .menu span:hover {
+  font-weight: bolder;
+}
+
+#nav-box {
+  width: 100%;
+  min-height: 80px;
+  padding: 20px;
+  background-color: #558C03;
+  border: 4px solid #010D00;
+  opacity: 0;
+  font-size: 25px;
+  overflow: hidden;
+  color: #010D00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  top: 73px;
+  right: 0;
+  transition: z-index 0.5s;
+  z-index: -2;
+}
+@media screen and (min-width: 500px) {
+  #nav-box {
+    width: 300px;
+  }
+}
+#nav-box .link {
+  width: 250px;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 2px solid #010D00;
+  transition: 0.5s;
+}
+#nav-box .link:hover {
+  background-color: #73be04;
+}
+
+#nav-box.active {
+  z-index: 2;
+  opacity: 1;
 }
 
 header {
