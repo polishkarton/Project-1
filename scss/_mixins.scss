@@ -9,3 +9,20 @@
         @content;
     }
 }
+
+// @mixin box-square($size, $border-color) {
+//     width: $size;
+//     height: $size;
+//     border: 5px solid $border-color;
+//     margin: 10px;
+// }
+
+// .test {
+//     @include box-square(200px, red);
+// }
+// .test2 {
+//     @include box-square(400px, blue);
+// }
+// .test3 {
+//     @include box-square(300px, green);
+// }
