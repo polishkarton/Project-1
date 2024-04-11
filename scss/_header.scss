@@ -51,7 +51,7 @@ header {
 
         a {
             font-size: 30px;
-            font-weight: bold;
+            font-weight: 600;
             line-height: 70px;
             font-style: italic;
             color: colors.$color1;
@@ -73,7 +73,7 @@ header {
 
             &:hover {
                 background-color: colors.$color-bg-href;
-                transform: skewX(-10deg);
+                transform: translateX(20px);
             }
             
             @include m.md {

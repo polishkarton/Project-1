@@ -12,7 +12,7 @@ nav {
     font-weight: bold;
     color: white;
 
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,6 +44,7 @@ nav {
 
             transition: weight 1s;
             cursor: pointer;
+            user-select: none;
 
             @include m.md {
                 font-size: 50px;

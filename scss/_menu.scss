@@ -7,7 +7,6 @@
     padding: 20px;
     background-color: colors.$color3;
     border: 4px solid colors.$color1;
-    opacity: 0;
 
     font-size: 25px;
     overflow: hidden;
@@ -19,18 +18,18 @@
     flex-direction: column;
     gap: 15px;
     position: fixed;
-    top: 73px;
+    top: -100vh;
     right: 0;
 
-    transition: z-index 0.5s;
-    z-index: -2;
+    transition: top 0.5s;
+    z-index: 2;
 
-    @media screen and (min-width: 500px) {
-        width: 300px;
+    @include m.md {
+        width: 400px;
     }
 
     .link {
-        width: 250px;
+        width: 100%;
         height: 50px;
         padding: 5px;
 
@@ -42,13 +41,16 @@
         
         transition: 0.5s;
 
+        @include m.md {
+            width: 300px;
+        }
+
         &:hover {
-            background-color: #558c03bb;
+            background-color: lighten(colors.$color3, 10);
         }
     }
 }
 
 #nav-box.active {
-    z-index: 2;
-    opacity: 1;
+    top: 73px;
 }
