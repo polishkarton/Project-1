@@ -1,0 +1,22 @@
+@use 'variables' as colors;
+@use 'mixins' as m;
+
+section {
+    min-height: 100vh;
+
+    h2 {
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+
+        margin: 30px 0;
+
+        @include m.md {
+            font-size: 45px;
+        }
+
+        @include m.lg {
+            font-size: 55px;
+        }
+    }
+}

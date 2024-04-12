@@ -38,6 +38,10 @@ nav {
 
         text-align: right;
 
+        @include m.md {
+            padding-right: 160px;
+        }
+
         span {
             font-size: 40px;
             font-weight: 400;

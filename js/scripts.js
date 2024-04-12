@@ -3,13 +3,13 @@
 const menu = document.querySelector('span');
 const dropdown = document.querySelector('#nav-box');
 
-menu.onclick = function() {
+menu.addEventListener('click', () => {
     if(menu.innerHTML == 'menu'){
         menu.innerHTML = 'close';
-        dropdown.classList.add('active')
+        dropdown.classList.add('active');
     }else {
         menu.innerHTML = 'menu';
-        dropdown.classList.remove('active')
+        dropdown.classList.remove('active');
     }
-};
+});
 
