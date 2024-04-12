@@ -85,7 +85,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   nav {
     font-size: 30px;
   }
@@ -103,7 +103,7 @@ nav .menu {
   padding-right: 5vw;
   text-align: right;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   nav .menu {
     padding-right: 160px;
   }
@@ -115,7 +115,7 @@ nav .menu span {
   cursor: pointer;
   user-select: none;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   nav .menu span {
     font-size: 50px;
   }
@@ -149,7 +149,7 @@ nav .menu span:hover {
   transition: top 0.5s;
   z-index: 2;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   #nav-box {
     width: 400px;
   }
@@ -164,7 +164,7 @@ nav .menu span:hover {
   border-top: 2px solid #010D00;
   transition: 0.5s;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   #nav-box .link {
     width: 300px;
   }
@@ -205,7 +205,7 @@ header .header-box h1 {
   user-select: none;
   z-index: 1;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   header .header-box h1 {
     font-size: 70px;
   }
@@ -246,7 +246,7 @@ header .header-box a:hover {
   background-color: #73be04;
   transform: translateX(20px);
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   header .header-box a {
     font-size: 45px;
     padding: 3px;
@@ -266,9 +266,9 @@ section h2 {
   font-weight: bold;
   font-size: 35px;
   text-align: center;
-  margin: 30px 0;
+  margin-top: 30px;
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 800px) {
   section h2 {
     font-size: 45px;
   }
@@ -277,6 +277,70 @@ section h2 {
   section h2 {
     font-size: 55px;
   }
+}
+section h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 8px;
+}
+@media screen and (min-width: 800px) {
+  section h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  section h3 {
+    font-size: 35px;
+  }
+}
+section p {
+  font-weight: 500;
+  font-size: 15px;
+}
+@media screen and (min-width: 800px) {
+  section p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  section p {
+    font-size: 25px;
+  }
+}
+
+.container {
+  padding: 25px;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 740px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .container {
+    width: 1224px;
+    margin: 0 auto;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 800px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.collumn {
+  width: 100%;
+}
+.collumn-md50 {
+  padding: 20px;
+  flex: 0 0 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

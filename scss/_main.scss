@@ -9,7 +9,7 @@ section {
         font-size: 35px;
         text-align: center;
 
-        margin: 30px 0;
+        margin-top: 30px;
 
         @include m.md {
             font-size: 45px;
@@ -17,6 +17,33 @@ section {
 
         @include m.lg {
             font-size: 55px;
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 8px;
+
+        @include m.md {
+            font-size: 30px;
+        }
+
+        @include m.lg {
+            font-size: 35px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 15px;
+
+        @include m.md {
+            font-size: 20px;
+        }
+
+        @include m.lg {
+            font-size: 25px;
         }
     }
 }
