@@ -38,6 +38,7 @@
     &-md33 {
         @include m.md {
             flex: 0 0 33.333333%;
+            text-align: center;
         }
     }
 

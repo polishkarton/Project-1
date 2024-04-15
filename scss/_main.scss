@@ -2,7 +2,11 @@
 @use 'mixins' as m;
 
 section {
-    min-height: 100vh;
+    min-height: 75vh;
+
+    &:nth-of-type(even) {
+        background: whitesmoke;
+    }
 
     h2 {
         font-weight: bold;

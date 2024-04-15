@@ -60,7 +60,7 @@ html {
 body {
   width: 100vw;
   height: 200vh;
-  background: #dbe8ef;
+  background: #f7fcff;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
@@ -263,7 +263,10 @@ header .header-box a:hover {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 75vh;
+}
+section:nth-of-type(even) {
+  background: whitesmoke;
 }
 section h2 {
   font-weight: bold;
@@ -311,6 +314,31 @@ section p {
   }
 }
 
+.menu-box {
+  box-shadow: 0 0 10px grey;
+  border-radius: 6px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu-box:hover {
+  box-shadow: 0 0 20px grey;
+}
+
+.picture {
+  height: 160px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: url("../assets/img/bg_header.webp") center/cover;
+}
+
+.text {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
 .container {
   padding: 25px;
 }
@@ -350,6 +378,7 @@ section p {
 @media screen and (min-width: 800px) {
   .collumn-md33 {
     flex: 0 0 33.333333%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 800px) {
@@ -389,22 +418,35 @@ input, textarea {
 input:focus, textarea:focus {
   border: 2px solid #73be04;
 }
-input[type=submit], textarea[type=submit] {
-  margin-top: 40px;
-}
 
 #send {
   background: #73be04;
   border: 2px solid black;
   transition: 0.5s;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100%;
+  cursor: pointer;
 }
 #send:hover {
   background: #558C03;
   transform: scale(0.9);
 }
+@media screen and (min-width: 800px) {
+  #send {
+    width: 50%;
+  }
+}
 
 textarea {
   resize: none;
+}
+
+footer {
+  min-height: 12vh;
+  background-color: rgba(89, 12, 12, 0.9);
+  color: white;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

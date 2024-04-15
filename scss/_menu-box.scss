@@ -1,0 +1,25 @@
+.menu-box {
+    box-shadow: 0 0 10px grey;
+    border-radius: 6px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 20px grey;
+    }
+}
+
+.picture {
+    height: 160px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: url('../assets/img/bg_header.webp') center/cover;
+}
+
+.text {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}

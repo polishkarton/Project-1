@@ -22,20 +22,24 @@ input {
     &:focus {
         border: 2px solid colors.$color-bg-href;
     }
-
-    &[type="submit"] {
-        margin-top: 40px;
-    }
 }
 
 #send {
     background: colors.$color-bg-href;
     border: 2px solid black;
     transition: 0.5s;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+    cursor: pointer;
 
     &:hover {
         background: colors.$color-bg-link;
         transform: scale(0.9)
+    }
+
+    @include m.md {
+        width: 50%;
     }
 }
 
