@@ -49,6 +49,7 @@ table {
 
 *, *::after, *::before {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -61,8 +62,8 @@ body {
   height: 200vh;
   background: #dbe8ef;
   overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -370,6 +371,40 @@ section p {
   .collumn-lg25 {
     flex: 0 0 25%;
   }
+}
+
+input, textarea, label {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+input, textarea {
+  border: 2px solid #558C03;
+  border-radius: 6px;
+  padding: 10px;
+  outline: 0;
+}
+input:focus, textarea:focus {
+  border: 2px solid #73be04;
+}
+input[type=submit], textarea[type=submit] {
+  margin-top: 40px;
+}
+
+#send {
+  background: #73be04;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+#send:hover {
+  background: #558C03;
+  transform: scale(0.9);
+}
+
+textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=style.css.map */

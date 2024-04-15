@@ -1,5 +1,6 @@
 *, *::after, *::before {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -13,9 +14,8 @@ body {
     background: #dbe8ef;
     overflow-x: hidden;
 
-    font-family: "Roboto", sans-serif;
-
     scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
