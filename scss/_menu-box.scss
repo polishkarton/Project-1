@@ -2,10 +2,12 @@
     box-shadow: 0 0 10px grey;
     border-radius: 6px;
     transition: 0.5s;
+    opacity: .8;
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 0 20px grey;
+        box-shadow: 0 0 30px grey;
+        opacity: 1;
     }
 }
 
@@ -13,7 +15,12 @@
     height: 160px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    background: url('../assets/img/bg_header.webp') center/cover;
+}
+
+@for $i from 1 through 4 {
+    .picture#{$i} {
+        background: url('../assets/img/pizza#{$i}.webp') center/cover;
+    }
 }
 
 .text {

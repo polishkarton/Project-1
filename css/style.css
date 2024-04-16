@@ -318,17 +318,34 @@ section p {
   box-shadow: 0 0 10px grey;
   border-radius: 6px;
   transition: 0.5s;
+  opacity: 0.8;
   cursor: pointer;
 }
 .menu-box:hover {
-  box-shadow: 0 0 20px grey;
+  box-shadow: 0 0 30px grey;
+  opacity: 1;
 }
 
 .picture {
   height: 160px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  background: url("../assets/img/bg_header.webp") center/cover;
+}
+
+.picture1 {
+  background: url("../assets/img/pizza1.webp") center/cover;
+}
+
+.picture2 {
+  background: url("../assets/img/pizza2.webp") center/cover;
+}
+
+.picture3 {
+  background: url("../assets/img/pizza3.webp") center/cover;
+}
+
+.picture4 {
+  background: url("../assets/img/pizza4.webp") center/cover;
 }
 
 .text {
