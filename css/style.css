@@ -468,12 +468,12 @@ textarea {
   background-color: rgba(255, 48, 48, 0.6);
 }
 .alert-success {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 10px auto;
   padding: 16px;
   text-align: center;
   font-size: 20px;
-  background-color: rgba(2, 46, 2, 0.6);
+  background-color: rgba(10, 137, 10, 0.61);
 }
 
 footer {
